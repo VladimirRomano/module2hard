@@ -13,9 +13,7 @@ for i in range(1, 21):
      for j in range(2, 21):
           s1 = i + j
           p1 = [i, j]
-          if s1 == res or res % s1 == 0:
+          if res % s1 == 0 and j > i:
                p2.append(p1)
-          elif i == j or j == i:
-               break
-
+          
 print(*p2)
